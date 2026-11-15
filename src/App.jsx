@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <h1>This is world flag tour </h1>
+      <h1>Everything is okay</h1>
       <Countries />
     </>
   );
