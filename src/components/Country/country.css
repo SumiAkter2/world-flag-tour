@@ -11,3 +11,19 @@
   color: green;
   font-weight: bolder;
 }
+.country-small {
+  color: rgb(100, 0, 128);
+  font-weight: bolder;
+}
+
+button {
+  padding: 10px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  /* border: 2px solid rgb(248, 118, 25); */
+  cursor: pointer;
+}
+
+.country-visited{
+    background: #fababa;
+}

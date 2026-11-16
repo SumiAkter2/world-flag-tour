@@ -2,6 +2,8 @@ import { use } from "react";
 import Country from "../Country/Country";
 import "./countries.css";
 const Countries = ({ countriesPromise }) => {
+  const [visitedCountry, setVisitedCountry] = useState([]);
+
   const countriesData = use(countriesPromise);
   console.log(countriesData);
 
