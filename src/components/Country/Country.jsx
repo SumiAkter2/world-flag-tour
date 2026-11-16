@@ -24,7 +24,9 @@ const Country = ({ country, handleCountVisitedCountry, handleVisitedFlag }) => {
     <div className={`  country  ${visited && "country-visited"}`}>
       {/* className={`  country  ${visited ? "country-visited" : "country-not-visited"}`}
     > */}
-      <h1 className="country-name">Country Name: {country?.name?.common}</h1>
+      <h1 className="country-name">
+        This Country Name: {country?.name?.common}
+      </h1>
       <img src={country?.flags?.flags?.png} alt={country?.flags?.flags?.alt} />
       <h4 className="country-official-name ">
         official :{country?.name?.official}
