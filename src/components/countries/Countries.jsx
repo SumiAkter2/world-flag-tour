@@ -1,8 +1,7 @@
-import React, { use, useState } from "react";
-import Country from "./Country/Country";
-
+import { use } from "react";
+import Country from "../Country/Country";
+import "./countries.css";
 const Countries = ({ countriesPromise }) => {
-  // const [countries,setCountries]=useState([]);
   const countriesData = use(countriesPromise);
   console.log(countriesData);
 
@@ -10,9 +9,11 @@ const Countries = ({ countriesPromise }) => {
     <div>
       <h1>HI this is from countries</h1>
       <h1>Countries length: {countriesData.length}</h1>
-      {countriesData.map((country) => (
-        <Country country={country} key={country.ccn3.ccn3}></Country>
-      ))}
+      <div className="country-section">
+        {countriesData.map((country) => (
+          <Country country={country} key={country.ccn3.ccn3}></Country>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,13 @@
+.country {
+  border: 1px solid salmon;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.country-name {
+  color: chocolate;
+}
+.country-official-name {
+  color: green;
+  font-weight: bolder;
+}
