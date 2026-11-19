@@ -21,7 +21,7 @@ const Axios = ({ studentsPromise }) => {
     <div>
       <h1>from Axios</h1>
       <div className="country-section">
-        {students.map((student) => (
+        {studentsMarkData.map((student) => (
           <div key={student.id}>
             <h3>ID: {student.id}</h3>
             <h3>Name: {student.name}</h3>
@@ -30,7 +30,7 @@ const Axios = ({ studentsPromise }) => {
 
             {student.subjects.map((sub) => (
               <p key={sub.SubName}>
-                {sub.SubName}: {sub.mark}
+                {sub.name}: {sub.mark}
               </p>
             ))}
           </div>
