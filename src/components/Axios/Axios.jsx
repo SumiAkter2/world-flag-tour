@@ -26,6 +26,7 @@ const Axios = ({ studentsPromise }) => {
             <h3>ID: {student.id}</h3>
             <h3>Name: {student.name}</h3>
             <h3>Age: {student?.age}</h3>
+            <h3>class: {student?.class}</h3>
 
             {student.subjects.map((sub) => (
               <p key={sub.SubName}>
