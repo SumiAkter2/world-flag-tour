@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
   const navigation = [
     { name: "Home", url: "/" },
     { name: "About", url: "/about" },
@@ -11,10 +12,13 @@ const NavBar = () => {
   return (
     <div>
       <h1>THis is from navigation</h1>
+      <h2 onClick={() => setOpen(!open)}>{open ? "open" : "close"}</h2>
 
       <ul>
         {navigation.map((nav) => (
-          <li nav={nav}>{nav.name}</li>
+          <li>
+            <a href={nav?.url}>{nav.name} </a>
+          </li>
         ))}
       </ul>
     </div>
